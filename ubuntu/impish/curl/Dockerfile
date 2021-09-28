@@ -4,11 +4,12 @@
 # PLEASE DO NOT EDIT IT DIRECTLY.
 #
 
-FROM build-harbor.alauda.cn/ops/ubuntu:21.10
+FROM ubuntu:impish
 
 RUN set -eux; \
 	apt-get update; \
 	apt-get install -y --no-install-recommends \
+        apt-transport-https \
 		ca-certificates \
 		curl \
 		netbase \
