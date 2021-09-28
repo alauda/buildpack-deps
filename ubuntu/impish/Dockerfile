@@ -4,7 +4,7 @@
 # PLEASE DO NOT EDIT IT DIRECTLY.
 #
 
-FROM buildpack-deps:impish-scm
+FROM build-harbor.alauda.cn/devops/buildpack-deps:21.0-scm
 
 RUN set -ex; \
 	apt-get update; \
